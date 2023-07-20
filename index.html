@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="website.css" type="text/css">
+    <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet"
+  href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Foods</a>
+        <div class="bx bx-menu" id="menuicon"></div>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </header>
+    <section class="home" id="home">
+        <div class="hometext">
+            <h1>Food Website</h1>
+            <h2>Food The <br> Most Precious Things</h2>
+            <a href="#menu" class="btn">Today's Menu</a>
+        </div>
+        <div class="homei">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="aboutimg">
+            <img src="images/about.png" alt="">
+        </div>
+        <div class="abouttext">
+            <span>About Us</span>
+            <h2>We speak the good <br> food language</h2>
+            <p>A healthy diet is a diet that maintains or improves overall health. A healthy diet provides the body with essential nutrition.</p>
+            <a href="#" class="btn">Today's Menu</a>
+        </div>
+    </section>
+    <section class="menu" id="menu">
+        <div class="heading">
+            <span>Food Menu</span>
+            <h2>Fresh taste and great price</h2>
+        </div>
+        <div class="menucon">
+            <div class="box">
+                <div class="boximg">
+                    <img src="images/food1.png" alt="">
+                </div>
+                <h2>Chicken Burger</h2>
+                <h3>Tasty Food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <div class="box">
+                <div class="boximg">
+                    <img src="images/food2.png" alt="">
+                </div>
+                <h2>Special Beef Burger</h2>
+                <h3>Tasty Food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+            <div class="box">
+                <div class="boximg">
+                    <img src="images/food3.png" alt="">
+                </div>
+                <h2>Chicken Fry Pack</h2>
+                <h3>Tasty Food</h3>
+                <span>$11.00</span>
+                <i class='bx bx-cart-alt'></i>
+            </div>
+        </div>
+        </div>
+    </section>
+</body>
+<script>
+    let menu =document.querySelector("#menuicon");
+    let navbar =document.querySelector(".navbar");
+
+    menu.addEventListener("click", function () {
+        navbar.classList.toggle("active");
+    });
+
+    window.onscroll = () => {
+        navbar.classList.remove("active");
+    };
+</script>
+</html>
